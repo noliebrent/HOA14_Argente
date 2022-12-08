@@ -8,3 +8,10 @@
       upgrade: dist
       update_cache: yes
     changed_when: false
+
+- hosts: UbuntuComputer
+  become: true
+  roles:
+    - Keystone
+    - Glance
+    - Nova
